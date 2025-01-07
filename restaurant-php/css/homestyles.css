@@ -136,3 +136,278 @@
 .attribution-list-text {
     margin-bottom: 1rem;
 }
+
+@media (max-width: 1050px) {
+
+    /* Banner */
+
+    .banner-description-container {
+        width: 400px;
+    }
+
+    .banner-image {
+        height: 370px;
+        width: 400px;   
+    }
+
+
+    .signature-dishes {
+        padding: 2rem 2rem;
+    }
+
+    .menu-item-container {
+        height: 340px;
+        width: 240px;
+        padding: 1rem;
+    }
+
+    .menu-item-image {
+        top: -50px;
+        height: 130px;
+        width: 130px;
+    }
+
+    .menu-item-description {
+        min-height: 86.4px;
+    }
+
+    .add-to-cart-button {
+        padding: 0.3rem 1.5rem;
+    }
+
+    /* About Us */
+
+    .about-us {
+        padding: 2rem 2rem;
+    }
+
+    .about-us-image {
+        height: 400px;
+        width: 260px;
+    }
+
+    .about-us-description-container {
+        width: 460px;
+    }
+}
+
+@media (max-width: 810px) {
+
+    /* Banner */
+
+    .banner-description-container {
+        width: 350px;
+    }
+
+    .banner-image {
+        height: 320px;
+        width: 350px;   
+    }
+
+
+    .signature-dishes {
+        padding: 2rem;
+    }
+
+    .menu-item {
+        gap: 1rem;
+    }
+
+    .menu-item-container {
+        height: 250px;
+        width: 170px;
+        padding: 1rem;
+    }
+
+    .menu-item-image {
+        top: -50px;
+        height: 90px;
+        width: 90px;
+    }
+
+    .menu-item-description {
+        min-height: 86.4px;
+    }
+
+    .add-to-cart-button {
+        padding: 0.3rem 1.5rem;
+    }
+
+    /* About Us */
+
+    .about-us {
+        padding: 2rem;
+    }
+
+    .about-us-image {
+        height: 350px;
+        width: 200px;
+    }
+
+    .about-us-description-container {
+        width: 300px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 2rem 2rem;
+    }
+
+    .footer-contact-svg-container {
+        height: 35px;
+        width: 35px;
+        border-radius: 35px;
+    }
+
+    .footer-attribution-container, .footer-membership-container {
+        width: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* Banner */
+
+    .banner-description-container {
+        width: 300px;
+    }
+
+    .banner-image {
+        height: 230px;
+        width: 250px;   
+    }
+
+
+    .signature-dishes {
+        padding: 1rem;
+    }
+
+    .menu-item {
+        gap: 1rem;
+    }
+
+    .menu-item-container {
+        height: 230px;
+        width: 150px;
+        padding: 1rem;
+    }
+
+    .menu-item-image {
+        top: -50px;
+        height: 90px;
+        width: 90px;
+    }
+
+    .menu-item-description {
+        min-height: 70px;
+    }
+
+    .add-to-cart-button {
+        padding: 0.3rem 1.5rem;
+    }
+
+    /* About Us */
+
+    .about-us {
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .about-us-image {
+        height: 300px;
+        width: 150px;
+    }
+
+    .about-us-description-container {
+        width: 250px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer-contact-svg-container {
+        height: 35px;
+        width: 35px;
+        border-radius: 35px;
+    }
+
+    .footer-attribution-container, .footer-membership-container {
+        width: 200px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    /* Banner */
+
+    .banner-description-container {
+        width: 100%;
+    }
+
+    .banner-image {
+        height: 180px;
+        width: 200px;   
+    }
+
+
+    .signature-dishes {
+        padding: 1rem;
+    }
+
+    .menu-item {
+        gap: 1rem;
+    }
+
+    .menu-item-container {
+        height: 200px;
+        width: 120px;
+        padding: 1rem;
+    }
+
+    .menu-item-image {
+        top: -50px;
+        height: 90px;
+        width: 90px;
+    }
+
+    .menu-item-description {
+        min-height: 60px;
+    }
+
+    .add-to-cart-button {
+        padding: 0.3rem 1.5rem;
+    }
+
+    /* About Us */
+
+    .about-us {
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .about-us-image {
+        height: 300px;
+        width: 150px;
+    }
+
+    .about-us-description-container {
+        width: 250px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer-contact-svg-container {
+        height: 35px;
+        width: 35px;
+        border-radius: 35px;
+    }
+
+    .footer-attribution-container, .footer-membership-container {
+        width: 200px;
+    }
+}
