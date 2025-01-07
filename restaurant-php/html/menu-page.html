@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edible</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/menustyles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-container section-container flex justify-center">
+        <div class="header section-content flex align-center space-between">
+            <div class="header-left flex big-gap align-center">
+                <a href="../index.html" class="pointer">
+                    <div class="company-container flex align-center big-gap" aria-label="Edible Company Logo">
+                        <img class="company-image" src="../images/restaurant/edible-logo.png" alt="Edible Company Logo">
+                        <strong class="text-largest capitalize">Edible</strong>
+                    </div>
+                </a>
+            </div>
+
+            <div class="header-right flex big-gap align-center">
+                <a href="../html/login-page.html">
+                    <button class="login-button">
+                        <strong class="text-medium capitalize">Log In</strong>
+                    </button>
+                </a>
+
+                <button class="cart-button basic-shadow flex gap radius" aria-label="View cart">
+                    <strong class="text-medium" aria-label="Items in cart">0</strong>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="white" d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2"/>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu -->
+    <main class="menu-container flex column">
+        
+
+        <!-- Category Tabs -->
+        <nav class="categories-tab-list flex justify-center basic-shadow">
+            <button class="appetizer-button categories-tab active " onclick="showTab('appetizer')">
+                <span class="capitalize text-medium">Appetizers</span>
+            </button>
+            <button class="main-course-button categories-tab" onclick="showTab('main-course')">
+                <span class="capitalize text-medium">Main Course</span>
+            </button>
+            <button class="dessert-button categories-tab" onclick="showTab('dessert')">
+                <span class="capitalize text-medium">Desserts</span>
+            </button>
+        </nav>
+        
+        <!-- Menu items by category -->
+        <section class="category wrap section-container flex column justify-center align-center big-gap">
+
+            
+            <div class="flex wrap section-content  big-gap space-between">
+                <article class="menu-item-container basic-shadow flex justify-center radius">
+                    <div class="menu-item flex align-center column big-gap">
+                        <!-- Displays the menu item name. htmlspecialchars() converts special characters to HTML -->
+                        <strong class="menu-item-title text-medium">Dim Sum Dish</strong>
+                        <div class="menu-item-info flex column space-between">
+                            <!-- Displays the description of the menu item -->
+                            <p class="menu-item-description">Dim sum dumplings with crisp carrots and cool lettuce.</p>
+                            <div class="menu-items-action-container flex align-center space-between gap">
+                                <!-- Display the price and rounds it to 2 decimal places -->
+                                <span class="bold text-medium">₱200.00</span>
+                                <button class="add-to-cart-button radius basic-shadow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="white" d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-item-container basic-shadow flex justify-center radius">
+                    <div class="menu-item flex align-center column big-gap">
+                        <!-- Displays the menu item name. htmlspecialchars() converts special characters to HTML -->
+                        <strong class="menu-item-title text-medium">Stuffed Mushrooms</strong>
+                        <div class="menu-item-info flex column space-between">
+                            <!-- Displays the description of the menu item -->
+                            <p class="menu-item-description">Baked mushroom caps filled with cream cheese, garlic, and herbs</p>
+                            <div class="menu-items-action-container flex align-center space-between gap">
+                                <!-- Display the price and rounds it to 2 decimal places -->
+                                <span class="bold text-medium">₱120.00</span>
+                                <button class="add-to-cart-button radius basic-shadow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="white" d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-item-container basic-shadow flex justify-center radius">
+                    <div class="menu-item flex align-center column big-gap">
+                        <!-- Displays the menu item name. htmlspecialchars() converts special characters to HTML -->
+                        <strong class="menu-item-title text-medium">Buffalo Wings</strong>
+                        <div class="menu-item-info flex column space-between">
+                            <!-- Displays the description of the menu item -->
+                            <p class="menu-item-description">Spicy chicken wings coated in a zesty buffalo sauce.</p>
+                            <div class="menu-items-action-container flex align-center space-between gap">
+                                <!-- Display the price and rounds it to 2 decimal places -->
+                                <span class="bold text-medium">₱270.00</span>
+                                <button class="add-to-cart-button radius basic-shadow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="white" d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-item-container basic-shadow flex justify-center radius">
+                    <div class="menu-item flex align-center column big-gap">
+                        <!-- Displays the menu item name. htmlspecialchars() converts special characters to HTML -->
+                        <strong class="menu-item-title text-medium">Crab Cakes</strong>
+                        <div class="menu-item-info flex column space-between">
+                            <!-- Displays the description of the menu item -->
+                            <p class="menu-item-description">Golden-brown patties made from fresh crab meat, mixed with herbs and spices.</p>
+                            <div class="menu-items-action-container flex align-center space-between gap">
+                                <!-- Display the price and rounds it to 2 decimal places -->
+                                <span class="bold text-medium">₱200.00</span>
+                                <button class="add-to-cart-button radius basic-shadow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="white" d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-item-container basic-shadow flex justify-center radius">
+                    <div class="menu-item flex align-center column big-gap">
+                        <!-- Displays the menu item name. htmlspecialchars() converts special characters to HTML -->
+                        <strong class="menu-item-title text-medium">Escargot</strong>
+                        <div class="menu-item-info flex column space-between">
+                            <!-- Displays the description of the menu item -->
+                            <p class="menu-item-description">Tender snails cooked in a rich garlic and herb butter sauce.</p>
+                            <div class="menu-items-action-container flex align-center space-between gap">
+                                <!-- Display the price and rounds it to 2 decimal places -->
+                                <span class="bold text-medium">₱300.00</span>
+                                <button class="add-to-cart-button radius basic-shadow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="white" d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-item-container basic-shadow flex justify-center radius">
+                    <div class="menu-item flex align-center column big-gap">
+                        <!-- Displays the menu item name. htmlspecialchars() converts special characters to HTML -->
+                        <strong class="menu-item-title text-medium">Mixed Sashimi Set</strong>
+                        <div class="menu-item-info flex column space-between">
+                            <!-- Displays the description of the menu item -->
+                            <p class="menu-item-description">A variety of raw fish, served with dipping sauce.</p>
+                            <div class="menu-items-action-container flex align-center space-between gap">
+                                <!-- Display the price and rounds it to 2 decimal places -->
+                                <span class="bold text-medium">₱200.00</span>
+                                <button class="add-to-cart-button radius basic-shadow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="white" d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25q0-.075.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="../js/menu/cart/cart.js"></script>
+    <script src="../js/menu/menu-tabs.js"></script>
+    <script src="../js/menu/menu-list.js"></script>
+    <script src="../js/menu/menu-header.js"></script>
+
+</body>
+</html>
